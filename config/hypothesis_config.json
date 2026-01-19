@@ -1,0 +1,28 @@
+{
+  "tests": {
+    "percentile_outlier": {
+      "enabled": true,
+      "upper_percentile": 95,
+      "lower_percentile": 5,
+      "description": "Flag if value is above 95th or below 5th percentile"
+    },
+    "above_average_change": {
+      "enabled": true,
+      "description": "Flag if change exceeds average change for that metric"
+    },
+    "budget_variance": {
+      "enabled": true,
+      "threshold_pct": 3.0,
+      "description": "Flag if variance from budget exceeds threshold"
+    }
+  },
+  "output": {
+    "flag_column": "sig_flag",
+    "direction_column": "direction",
+    "insight_ready_column": "flag_insight_ready"
+  },
+  "defaults": {
+    "min_data_points": 3,
+    "flag_insight_ready_when_any_sig": true
+  }
+}
