@@ -103,7 +103,7 @@ class HypothesisEngine:
         else:
             output_df = pd.DataFrame(columns=[
                 "category", "metric", "test_type", "test_metric",
-                "sig_flag", "direction", "flag_insight_ready"
+                "test_metric_description", "sig_flag", "direction", "flag_insight_ready"
             ])
 
         return output_df.reset_index(drop=True)
@@ -147,6 +147,7 @@ class HypothesisEngine:
             "metric": metric,
             "test_type": "percentile_outlier",
             "test_metric": round(test_metric, 2),
+            "test_metric_description": "% beyond percentile threshold",
             "sig_flag": is_outlier,
             "direction": direction,
             "flag_insight_ready": is_outlier
@@ -195,6 +196,7 @@ class HypothesisEngine:
             "metric": metric,
             "test_type": "above_avg_change",
             "test_metric": round(current_change, 2),
+            "test_metric_description": "% change week-over-week",
             "sig_flag": is_above_avg,
             "direction": direction,
             "flag_insight_ready": is_above_avg
@@ -228,6 +230,7 @@ class HypothesisEngine:
             "metric": metric,
             "test_type": "budget_variance",
             "test_metric": round(variance_pct, 2),
+            "test_metric_description": "% variance from budget",
             "sig_flag": is_significant,
             "direction": direction,
             "flag_insight_ready": is_significant
