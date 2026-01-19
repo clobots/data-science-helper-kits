@@ -37,9 +37,10 @@ env/
 .env
 .env.local
 
-# Generated data (but keep sample_metrics.csv)
+# Generated data (but keep sample files)
 data/sample_data/*
 !data/sample_data/sample_metrics.csv
+!data/sample_data/hierarchy.csv
 output/
 
 # Jupyter

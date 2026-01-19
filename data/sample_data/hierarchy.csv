@@ -1,0 +1,216 @@
+store_id,store_name,group,zone,state,national
+XAJI0Y,Sydney CBD Store 1,Sydney_CBD,NSW_Metro,NSW,Woolworths_AU
+6DPBHS,Sydney CBD Store 2,Sydney_CBD,NSW_Metro,NSW,Woolworths_AU
+AHXTHV,Sydney CBD Store 3,Sydney_CBD,NSW_Metro,NSW,Woolworths_AU
+3A3ZMF,Sydney CBD Store 4,Sydney_CBD,NSW_Metro,NSW,Woolworths_AU
+8MDD4V,Sydney CBD Store 5,Sydney_CBD,NSW_Metro,NSW,Woolworths_AU
+30T9NT,Sydney North Store 1,Sydney_North,NSW_Metro,NSW,Woolworths_AU
+3W5UZB,Sydney North Store 2,Sydney_North,NSW_Metro,NSW,Woolworths_AU
+IKCIDK,Sydney North Store 3,Sydney_North,NSW_Metro,NSW,Woolworths_AU
+WNNHJ7,Sydney North Store 4,Sydney_North,NSW_Metro,NSW,Woolworths_AU
+XVG0FN,Sydney North Store 5,Sydney_North,NSW_Metro,NSW,Woolworths_AU
+9XUY41,Sydney South Store 1,Sydney_South,NSW_Metro,NSW,Woolworths_AU
+IBLJH7,Sydney South Store 2,Sydney_South,NSW_Metro,NSW,Woolworths_AU
+5LXO6Q,Sydney South Store 3,Sydney_South,NSW_Metro,NSW,Woolworths_AU
+JIUJV6,Sydney South Store 4,Sydney_South,NSW_Metro,NSW,Woolworths_AU
+OH9SDB,Sydney South Store 5,Sydney_South,NSW_Metro,NSW,Woolworths_AU
+DW2PCN,Sydney West Store 1,Sydney_West,NSW_Metro,NSW,Woolworths_AU
+9T84AZ,Sydney West Store 2,Sydney_West,NSW_Metro,NSW,Woolworths_AU
+YTJXEP,Sydney West Store 3,Sydney_West,NSW_Metro,NSW,Woolworths_AU
+Q85JSG,Sydney West Store 4,Sydney_West,NSW_Metro,NSW,Woolworths_AU
+65KXVF,Sydney West Store 5,Sydney_West,NSW_Metro,NSW,Woolworths_AU
+1T2TAL,Newcastle Store 1,Newcastle,NSW_Hunter,NSW,Woolworths_AU
+A753LC,Newcastle Store 2,Newcastle,NSW_Hunter,NSW,Woolworths_AU
+58DRC1,Newcastle Store 3,Newcastle,NSW_Hunter,NSW,Woolworths_AU
+1ERTJ5,Newcastle Store 4,Newcastle,NSW_Hunter,NSW,Woolworths_AU
+PHT0HL,Newcastle Store 5,Newcastle,NSW_Hunter,NSW,Woolworths_AU
+9XPSEI,Central Coast Store 1,Central_Coast,NSW_Hunter,NSW,Woolworths_AU
+MVIHCW,Central Coast Store 2,Central_Coast,NSW_Hunter,NSW,Woolworths_AU
+I64CIY,Central Coast Store 3,Central_Coast,NSW_Hunter,NSW,Woolworths_AU
+HE7UR2,Central Coast Store 4,Central_Coast,NSW_Hunter,NSW,Woolworths_AU
+3GDPPQ,Central Coast Store 5,Central_Coast,NSW_Hunter,NSW,Woolworths_AU
+0Y9DOM,Wollongong Store 1,Wollongong,NSW_Regional,NSW,Woolworths_AU
+5IGQPK,Wollongong Store 2,Wollongong,NSW_Regional,NSW,Woolworths_AU
+I7P5TB,Wollongong Store 3,Wollongong,NSW_Regional,NSW,Woolworths_AU
+94874F,Wollongong Store 4,Wollongong,NSW_Regional,NSW,Woolworths_AU
+RHOCN9,Wollongong Store 5,Wollongong,NSW_Regional,NSW,Woolworths_AU
+J2QP89,Canberra Border Store 1,Canberra_Border,NSW_Regional,NSW,Woolworths_AU
+UZFK8U,Canberra Border Store 2,Canberra_Border,NSW_Regional,NSW,Woolworths_AU
+T0CVS4,Canberra Border Store 3,Canberra_Border,NSW_Regional,NSW,Woolworths_AU
+F8CGVY,Canberra Border Store 4,Canberra_Border,NSW_Regional,NSW,Woolworths_AU
+IE6IVW,Canberra Border Store 5,Canberra_Border,NSW_Regional,NSW,Woolworths_AU
+PVS7HZ,North Coast Store 1,North_Coast,NSW_North,NSW,Woolworths_AU
+IOYKL1,North Coast Store 2,North_Coast,NSW_North,NSW,Woolworths_AU
+CQ99CH,North Coast Store 3,North_Coast,NSW_North,NSW,Woolworths_AU
+J755NF,North Coast Store 4,North_Coast,NSW_North,NSW,Woolworths_AU
+4ZW9XA,North Coast Store 5,North_Coast,NSW_North,NSW,Woolworths_AU
+3KX7EE,New England Store 1,New_England,NSW_North,NSW,Woolworths_AU
+DTJVZH,New England Store 2,New_England,NSW_North,NSW,Woolworths_AU
+WJR64D,New England Store 3,New_England,NSW_North,NSW,Woolworths_AU
+PJA1WJ,New England Store 4,New_England,NSW_North,NSW,Woolworths_AU
+0TPAC5,New England Store 5,New_England,NSW_North,NSW,Woolworths_AU
+6T4UFE,Melbourne CBD Store 1,Melbourne_CBD,VIC_Metro,VIC,Woolworths_AU
+L6246H,Melbourne CBD Store 2,Melbourne_CBD,VIC_Metro,VIC,Woolworths_AU
+ID25OW,Melbourne CBD Store 3,Melbourne_CBD,VIC_Metro,VIC,Woolworths_AU
+F75935,Melbourne CBD Store 4,Melbourne_CBD,VIC_Metro,VIC,Woolworths_AU
+A0L725,Melbourne CBD Store 5,Melbourne_CBD,VIC_Metro,VIC,Woolworths_AU
+3J2D54,Melbourne East Store 1,Melbourne_East,VIC_Metro,VIC,Woolworths_AU
+I3QK2I,Melbourne East Store 2,Melbourne_East,VIC_Metro,VIC,Woolworths_AU
+AGL58K,Melbourne East Store 3,Melbourne_East,VIC_Metro,VIC,Woolworths_AU
+XO9T7E,Melbourne East Store 4,Melbourne_East,VIC_Metro,VIC,Woolworths_AU
+8G8JDP,Melbourne East Store 5,Melbourne_East,VIC_Metro,VIC,Woolworths_AU
+0LVSNU,Melbourne West Store 1,Melbourne_West,VIC_Metro,VIC,Woolworths_AU
+JZA7TZ,Melbourne West Store 2,Melbourne_West,VIC_Metro,VIC,Woolworths_AU
+0YNCXL,Melbourne West Store 3,Melbourne_West,VIC_Metro,VIC,Woolworths_AU
+L4ZKLO,Melbourne West Store 4,Melbourne_West,VIC_Metro,VIC,Woolworths_AU
+OKEP7Y,Melbourne West Store 5,Melbourne_West,VIC_Metro,VIC,Woolworths_AU
+6WKTAK,Melbourne South Store 1,Melbourne_South,VIC_Metro,VIC,Woolworths_AU
+PUXQPH,Melbourne South Store 2,Melbourne_South,VIC_Metro,VIC,Woolworths_AU
+R62GDS,Melbourne South Store 3,Melbourne_South,VIC_Metro,VIC,Woolworths_AU
+WM31YI,Melbourne South Store 4,Melbourne_South,VIC_Metro,VIC,Woolworths_AU
+HAIR4C,Melbourne South Store 5,Melbourne_South,VIC_Metro,VIC,Woolworths_AU
+OWGZRI,Geelong Store 1,Geelong,VIC_Regional,VIC,Woolworths_AU
+XA11DP,Geelong Store 2,Geelong,VIC_Regional,VIC,Woolworths_AU
+G8SBI4,Geelong Store 3,Geelong,VIC_Regional,VIC,Woolworths_AU
+Q2Y9V8,Geelong Store 4,Geelong,VIC_Regional,VIC,Woolworths_AU
+6WZS3T,Geelong Store 5,Geelong,VIC_Regional,VIC,Woolworths_AU
+60RJIW,Ballarat Store 1,Ballarat,VIC_Regional,VIC,Woolworths_AU
+1SWJCK,Ballarat Store 2,Ballarat,VIC_Regional,VIC,Woolworths_AU
+JLTEIY,Ballarat Store 3,Ballarat,VIC_Regional,VIC,Woolworths_AU
+ZCOTOH,Ballarat Store 4,Ballarat,VIC_Regional,VIC,Woolworths_AU
+P6VZ41,Ballarat Store 5,Ballarat,VIC_Regional,VIC,Woolworths_AU
+NAM148,Bendigo Store 1,Bendigo,VIC_Regional,VIC,Woolworths_AU
+P0TVHH,Bendigo Store 2,Bendigo,VIC_Regional,VIC,Woolworths_AU
+PBMYOF,Bendigo Store 3,Bendigo,VIC_Regional,VIC,Woolworths_AU
+QEWAOU,Bendigo Store 4,Bendigo,VIC_Regional,VIC,Woolworths_AU
+AXEQBN,Bendigo Store 5,Bendigo,VIC_Regional,VIC,Woolworths_AU
+HL1N13,Gippsland East Store 1,Gippsland_East,VIC_Gippsland,VIC,Woolworths_AU
+JCAT9M,Gippsland East Store 2,Gippsland_East,VIC_Gippsland,VIC,Woolworths_AU
+X2X18H,Gippsland East Store 3,Gippsland_East,VIC_Gippsland,VIC,Woolworths_AU
+AFEYUH,Gippsland East Store 4,Gippsland_East,VIC_Gippsland,VIC,Woolworths_AU
+Z1GV0E,Gippsland East Store 5,Gippsland_East,VIC_Gippsland,VIC,Woolworths_AU
+38DALY,Gippsland West Store 1,Gippsland_West,VIC_Gippsland,VIC,Woolworths_AU
+8OZCYW,Gippsland West Store 2,Gippsland_West,VIC_Gippsland,VIC,Woolworths_AU
+D14VE9,Gippsland West Store 3,Gippsland_West,VIC_Gippsland,VIC,Woolworths_AU
+2MPNSM,Gippsland West Store 4,Gippsland_West,VIC_Gippsland,VIC,Woolworths_AU
+43D8W3,Gippsland West Store 5,Gippsland_West,VIC_Gippsland,VIC,Woolworths_AU
+ZP08J3,Brisbane CBD Store 1,Brisbane_CBD,QLD_SEQ,QLD,Woolworths_AU
+TRP0J4,Brisbane CBD Store 2,Brisbane_CBD,QLD_SEQ,QLD,Woolworths_AU
+3D5IQV,Brisbane CBD Store 3,Brisbane_CBD,QLD_SEQ,QLD,Woolworths_AU
+NB4GH2,Brisbane CBD Store 4,Brisbane_CBD,QLD_SEQ,QLD,Woolworths_AU
+M5ZJA8,Brisbane CBD Store 5,Brisbane_CBD,QLD_SEQ,QLD,Woolworths_AU
+DZR1YX,Brisbane North Store 1,Brisbane_North,QLD_SEQ,QLD,Woolworths_AU
+R2DHYL,Brisbane North Store 2,Brisbane_North,QLD_SEQ,QLD,Woolworths_AU
+URTP0L,Brisbane North Store 3,Brisbane_North,QLD_SEQ,QLD,Woolworths_AU
+ZJJEGE,Brisbane North Store 4,Brisbane_North,QLD_SEQ,QLD,Woolworths_AU
+T1GHR0,Brisbane North Store 5,Brisbane_North,QLD_SEQ,QLD,Woolworths_AU
+9SKDGI,Brisbane South Store 1,Brisbane_South,QLD_SEQ,QLD,Woolworths_AU
+GATJ9T,Brisbane South Store 2,Brisbane_South,QLD_SEQ,QLD,Woolworths_AU
+ZE5R5U,Brisbane South Store 3,Brisbane_South,QLD_SEQ,QLD,Woolworths_AU
+QPGB7R,Brisbane South Store 4,Brisbane_South,QLD_SEQ,QLD,Woolworths_AU
+3OCWBF,Brisbane South Store 5,Brisbane_South,QLD_SEQ,QLD,Woolworths_AU
+UK9E1V,Gold Coast Store 1,Gold_Coast,QLD_SEQ,QLD,Woolworths_AU
+2ISQP4,Gold Coast Store 2,Gold_Coast,QLD_SEQ,QLD,Woolworths_AU
+9KWV08,Gold Coast Store 3,Gold_Coast,QLD_SEQ,QLD,Woolworths_AU
+HHXFGC,Gold Coast Store 4,Gold_Coast,QLD_SEQ,QLD,Woolworths_AU
+AQVKIZ,Gold Coast Store 5,Gold_Coast,QLD_SEQ,QLD,Woolworths_AU
+ZQY72W,Sunshine Coast Store 1,Sunshine_Coast,QLD_Central,QLD,Woolworths_AU
+X7PTX6,Sunshine Coast Store 2,Sunshine_Coast,QLD_Central,QLD,Woolworths_AU
+3CFL0U,Sunshine Coast Store 3,Sunshine_Coast,QLD_Central,QLD,Woolworths_AU
+KEYZ7S,Sunshine Coast Store 4,Sunshine_Coast,QLD_Central,QLD,Woolworths_AU
+RCBPLJ,Sunshine Coast Store 5,Sunshine_Coast,QLD_Central,QLD,Woolworths_AU
+D84U89,Toowoomba Store 1,Toowoomba,QLD_Central,QLD,Woolworths_AU
+YJB1QX,Toowoomba Store 2,Toowoomba,QLD_Central,QLD,Woolworths_AU
+6GVWRD,Toowoomba Store 3,Toowoomba,QLD_Central,QLD,Woolworths_AU
+MLY4LY,Toowoomba Store 4,Toowoomba,QLD_Central,QLD,Woolworths_AU
+K83TQL,Toowoomba Store 5,Toowoomba,QLD_Central,QLD,Woolworths_AU
+L8OS9X,Townsville Store 1,Townsville,QLD_North,QLD,Woolworths_AU
+TOGN1W,Townsville Store 2,Townsville,QLD_North,QLD,Woolworths_AU
+1HT7PZ,Townsville Store 3,Townsville,QLD_North,QLD,Woolworths_AU
+E9VIFT,Townsville Store 4,Townsville,QLD_North,QLD,Woolworths_AU
+TD96QE,Townsville Store 5,Townsville,QLD_North,QLD,Woolworths_AU
+3RZSJ4,Cairns Store 1,Cairns,QLD_North,QLD,Woolworths_AU
+9ITN7S,Cairns Store 2,Cairns,QLD_North,QLD,Woolworths_AU
+55J2O7,Cairns Store 3,Cairns,QLD_North,QLD,Woolworths_AU
+S3KKV9,Cairns Store 4,Cairns,QLD_North,QLD,Woolworths_AU
+RFTMTT,Cairns Store 5,Cairns,QLD_North,QLD,Woolworths_AU
+QLGZUI,Perth CBD Store 1,Perth_CBD,WA_Metro,WA,Woolworths_AU
+1B0Z3N,Perth CBD Store 2,Perth_CBD,WA_Metro,WA,Woolworths_AU
+X39RBS,Perth CBD Store 3,Perth_CBD,WA_Metro,WA,Woolworths_AU
+V55PSQ,Perth CBD Store 4,Perth_CBD,WA_Metro,WA,Woolworths_AU
+0OXFQ8,Perth CBD Store 5,Perth_CBD,WA_Metro,WA,Woolworths_AU
+MYX444,Perth North Store 1,Perth_North,WA_Metro,WA,Woolworths_AU
+NLZ15B,Perth North Store 2,Perth_North,WA_Metro,WA,Woolworths_AU
+CW790P,Perth North Store 3,Perth_North,WA_Metro,WA,Woolworths_AU
+DW5PY6,Perth North Store 4,Perth_North,WA_Metro,WA,Woolworths_AU
+B2KNFT,Perth North Store 5,Perth_North,WA_Metro,WA,Woolworths_AU
+U2GC5W,Perth South Store 1,Perth_South,WA_Metro,WA,Woolworths_AU
+I6FQJJ,Perth South Store 2,Perth_South,WA_Metro,WA,Woolworths_AU
+A26YFP,Perth South Store 3,Perth_South,WA_Metro,WA,Woolworths_AU
+MVXPJ4,Perth South Store 4,Perth_South,WA_Metro,WA,Woolworths_AU
+HNRIUU,Perth South Store 5,Perth_South,WA_Metro,WA,Woolworths_AU
+9K9XJU,Bunbury Store 1,Bunbury,WA_Regional,WA,Woolworths_AU
+Y0BVR6,Bunbury Store 2,Bunbury,WA_Regional,WA,Woolworths_AU
+K2VMWW,Bunbury Store 3,Bunbury,WA_Regional,WA,Woolworths_AU
+YZX4W6,Bunbury Store 4,Bunbury,WA_Regional,WA,Woolworths_AU
+XLPU0D,Bunbury Store 5,Bunbury,WA_Regional,WA,Woolworths_AU
+K0GET8,Geraldton Store 1,Geraldton,WA_Regional,WA,Woolworths_AU
+T63J3R,Geraldton Store 2,Geraldton,WA_Regional,WA,Woolworths_AU
+30ME8F,Geraldton Store 3,Geraldton,WA_Regional,WA,Woolworths_AU
+840982,Geraldton Store 4,Geraldton,WA_Regional,WA,Woolworths_AU
+N2ATQY,Geraldton Store 5,Geraldton,WA_Regional,WA,Woolworths_AU
+YV37DI,Adelaide CBD Store 1,Adelaide_CBD,SA_Metro,SA,Woolworths_AU
+A5U6HC,Adelaide CBD Store 2,Adelaide_CBD,SA_Metro,SA,Woolworths_AU
+36KOF8,Adelaide CBD Store 3,Adelaide_CBD,SA_Metro,SA,Woolworths_AU
+KRD5EQ,Adelaide CBD Store 4,Adelaide_CBD,SA_Metro,SA,Woolworths_AU
+Y08P0F,Adelaide CBD Store 5,Adelaide_CBD,SA_Metro,SA,Woolworths_AU
+ODRO8B,Adelaide North Store 1,Adelaide_North,SA_Metro,SA,Woolworths_AU
+NP84DY,Adelaide North Store 2,Adelaide_North,SA_Metro,SA,Woolworths_AU
+T9MOGE,Adelaide North Store 3,Adelaide_North,SA_Metro,SA,Woolworths_AU
+4QXXVA,Adelaide North Store 4,Adelaide_North,SA_Metro,SA,Woolworths_AU
+2IEUC1,Adelaide North Store 5,Adelaide_North,SA_Metro,SA,Woolworths_AU
+HH5LF6,Adelaide South Store 1,Adelaide_South,SA_Metro,SA,Woolworths_AU
+A4FEJG,Adelaide South Store 2,Adelaide_South,SA_Metro,SA,Woolworths_AU
+XAA2IL,Adelaide South Store 3,Adelaide_South,SA_Metro,SA,Woolworths_AU
+GB0S0R,Adelaide South Store 4,Adelaide_South,SA_Metro,SA,Woolworths_AU
+2SDS8B,Adelaide South Store 5,Adelaide_South,SA_Metro,SA,Woolworths_AU
+25SQ8C,Mount Gambier Store 1,Mount_Gambier,SA_Regional,SA,Woolworths_AU
+ROYR6C,Mount Gambier Store 2,Mount_Gambier,SA_Regional,SA,Woolworths_AU
+CVCJWT,Mount Gambier Store 3,Mount_Gambier,SA_Regional,SA,Woolworths_AU
+L9TQVD,Mount Gambier Store 4,Mount_Gambier,SA_Regional,SA,Woolworths_AU
+Z4X1ZH,Mount Gambier Store 5,Mount_Gambier,SA_Regional,SA,Woolworths_AU
+QIMQOD,Hobart Store 1,Hobart,TAS_South,TAS,Woolworths_AU
+PXNF7C,Hobart Store 2,Hobart,TAS_South,TAS,Woolworths_AU
+3DD03U,Hobart Store 3,Hobart,TAS_South,TAS,Woolworths_AU
+VULEMX,Hobart Store 4,Hobart,TAS_South,TAS,Woolworths_AU
+15Z8VM,Hobart Store 5,Hobart,TAS_South,TAS,Woolworths_AU
+UHXID4,Kingston Store 1,Kingston,TAS_South,TAS,Woolworths_AU
+N1U349,Kingston Store 2,Kingston,TAS_South,TAS,Woolworths_AU
+3WXA73,Kingston Store 3,Kingston,TAS_South,TAS,Woolworths_AU
+JGZLMA,Kingston Store 4,Kingston,TAS_South,TAS,Woolworths_AU
+5UOFWB,Kingston Store 5,Kingston,TAS_South,TAS,Woolworths_AU
+0HPMNZ,Launceston Store 1,Launceston,TAS_North,TAS,Woolworths_AU
+1UDBFW,Launceston Store 2,Launceston,TAS_North,TAS,Woolworths_AU
+YJXRPJ,Launceston Store 3,Launceston,TAS_North,TAS,Woolworths_AU
+1EPKYR,Launceston Store 4,Launceston,TAS_North,TAS,Woolworths_AU
+YBOVAK,Launceston Store 5,Launceston,TAS_North,TAS,Woolworths_AU
+HEJLA0,Darwin Store 1,Darwin,NT_Top_End,NT,Woolworths_AU
+GNZS43,Darwin Store 2,Darwin,NT_Top_End,NT,Woolworths_AU
+C5BA75,Darwin Store 3,Darwin,NT_Top_End,NT,Woolworths_AU
+UUZPEA,Darwin Store 4,Darwin,NT_Top_End,NT,Woolworths_AU
+L2W37D,Darwin Store 5,Darwin,NT_Top_End,NT,Woolworths_AU
+4IVSOL,Palmerston Store 1,Palmerston,NT_Top_End,NT,Woolworths_AU
+MLGSES,Palmerston Store 2,Palmerston,NT_Top_End,NT,Woolworths_AU
+6M033I,Palmerston Store 3,Palmerston,NT_Top_End,NT,Woolworths_AU
+FHV1XG,Palmerston Store 4,Palmerston,NT_Top_End,NT,Woolworths_AU
+1R11Q7,Palmerston Store 5,Palmerston,NT_Top_End,NT,Woolworths_AU
+UWW5WF,Canberra North Store 1,Canberra_North,ACT_Central,ACT,Woolworths_AU
+CPKJCS,Canberra North Store 2,Canberra_North,ACT_Central,ACT,Woolworths_AU
+LQC3C5,Canberra North Store 3,Canberra_North,ACT_Central,ACT,Woolworths_AU
+4WSQT2,Canberra North Store 4,Canberra_North,ACT_Central,ACT,Woolworths_AU
+6Q3XLR,Canberra North Store 5,Canberra_North,ACT_Central,ACT,Woolworths_AU
+FCD6MZ,Canberra South Store 1,Canberra_South,ACT_Central,ACT,Woolworths_AU
+SGIPPS,Canberra South Store 2,Canberra_South,ACT_Central,ACT,Woolworths_AU
+FNKOMV,Canberra South Store 3,Canberra_South,ACT_Central,ACT,Woolworths_AU
+2XCDYK,Canberra South Store 4,Canberra_South,ACT_Central,ACT,Woolworths_AU
+0X65MU,Canberra South Store 5,Canberra_South,ACT_Central,ACT,Woolworths_AU
