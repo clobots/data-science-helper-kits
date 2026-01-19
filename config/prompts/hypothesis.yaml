@@ -1,0 +1,98 @@
+# Hypothesis Engine Prompt Templates
+
+system_prompt: |
+  You are an expert retail data analyst specializing in Australian supermarket operations.
+  Your role is to identify significant changes in key performance metrics that warrant investigation.
+
+  You analyze data from Woolworths Australia across these metrics:
+  - Wages: Labor cost as percentage of sales (lower is better)
+  - Voice of Customer: Customer satisfaction scores 0-100 (higher is better)
+  - Sales: Total revenue in AUD (higher is better)
+  - Stockloss: Inventory shrinkage as percentage (lower is better)
+  - Order Pickrate: Online order fulfillment items per hour (higher is better)
+
+  When identifying hypotheses:
+  1. Focus on statistically significant changes, not noise
+  2. Consider week-over-week changes, budget variances, and trend anomalies
+  3. Prioritize changes that have business impact
+  4. Be specific about the direction and magnitude of changes
+
+detection_prompt: |
+  Analyze the following metric comparisons and identify significant changes that require investigation.
+
+  {context}
+
+  For each significant finding, generate a hypothesis that explains:
+  1. What metric is affected
+  2. At what level in the organization
+  3. The type of change (WoW increase/decrease, budget over/under, trend anomaly)
+  4. The magnitude of the change
+  5. Why this is significant enough to investigate
+
+  Return your analysis as a JSON object with the following structure:
+  {{
+    "analysis_date": "YYYY-MM-DD",
+    "total_comparisons_analyzed": <number>,
+    "hypotheses": [
+      {{
+        "id": "HYP001",
+        "metric": "<metric_name>",
+        "hierarchy_level": "<level>",
+        "hierarchy_id": "<id>",
+        "hierarchy_name": "<name>",
+        "change_type": "<wow_increase|wow_decrease|budget_over|budget_under|trend_anomaly>",
+        "change_value": <number>,
+        "change_percentage": <number>,
+        "significance_score": <0.0-1.0>,
+        "description": "<human readable description>",
+        "requires_investigation": <true|false>
+      }}
+    ],
+    "summary": "<overall summary of findings>"
+  }}
+
+validation_prompt: |
+  Review the following hypothesis for validity and business relevance:
+
+  Hypothesis: {hypothesis}
+
+  Supporting Data:
+  {data}
+
+  Evaluate:
+  1. Is the statistical significance real or likely noise?
+  2. Does this represent a meaningful business impact?
+  3. Is there enough data to support this hypothesis?
+  4. What additional context might be needed?
+
+  Return your assessment as JSON:
+  {{
+    "is_valid": <true|false>,
+    "confidence": <0.0-1.0>,
+    "concerns": ["<concern1>", "<concern2>"],
+    "recommended_action": "<investigate|monitor|dismiss>"
+  }}
+
+prioritization_prompt: |
+  Given multiple hypotheses, rank them by priority for investigation.
+
+  Hypotheses:
+  {hypotheses}
+
+  Consider:
+  1. Financial impact (sales, wages, stockloss have direct $ impact)
+  2. Customer impact (voice of customer affects long-term revenue)
+  3. Operational urgency (some issues compound if not addressed)
+  4. Ease of investigation (some hypotheses are easier to validate)
+
+  Return prioritized list as JSON:
+  {{
+    "prioritized_hypotheses": [
+      {{
+        "id": "<hypothesis_id>",
+        "priority_rank": <1,2,3...>,
+        "priority_score": <0.0-1.0>,
+        "rationale": "<why this priority>"
+      }}
+    ]
+  }}

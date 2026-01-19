@@ -1,0 +1,135 @@
+# General Summariser Tool Prompt Templates
+
+system_prompt: |
+  You are an expert content summariser who adapts communication style to match
+  audience needs and goals. You excel at extracting key information and presenting
+  it in the most effective format for the reader.
+
+  Core principles:
+  1. Always prioritize clarity over comprehensiveness
+  2. Match vocabulary to audience expertise level
+  3. Use appropriate formatting for the medium
+  4. Focus on actionable information when relevant
+
+summarise_prompt: |
+  Summarise the following content according to these specifications:
+
+  {context}
+
+  Content:
+  {content}
+
+  Create a summary that:
+  1. Addresses the audience's specific goal
+  2. Uses the specified tone consistently
+  3. Follows the requested format
+  4. Extracts only the most relevant information
+  5. Stays within key points limit if specified
+
+  Return as JSON:
+  {{
+    "summary": "<the summary text>",
+    "key_points": ["<point1>", "<point2>", ...],
+    "tone_applied": "<the tone used>",
+    "word_count": <number>,
+    "audience_appropriate": <true|false>
+  }}
+
+tone_guidelines:
+  formal:
+    description: "Professional, objective, uses complete sentences and proper grammar"
+    examples:
+      - "The analysis indicates a significant variance in operational metrics."
+      - "It is recommended that immediate action be taken."
+    avoid:
+      - Contractions
+      - Casual expressions
+      - First person singular
+
+  conversational:
+    description: "Friendly, approachable, uses natural language patterns"
+    examples:
+      - "Here's what we found - there's a notable uptick in customer complaints."
+      - "The good news is we've identified the root cause."
+    avoid:
+      - Overly technical jargon
+      - Stiff formal constructions
+      - Passive voice overuse
+
+  urgent:
+    description: "Direct, action-oriented, emphasizes immediacy"
+    examples:
+      - "Immediate attention required: Sales down 15% in NSW stores."
+      - "Action needed today: Customer satisfaction dropping rapidly."
+    avoid:
+      - Hedging language
+      - Excessive context
+      - Delayed recommendations
+
+  encouraging:
+    description: "Positive, supportive, highlights opportunities"
+    examples:
+      - "Great progress this week! Three stores exceeded targets."
+      - "There's real opportunity here to build on these improvements."
+    avoid:
+      - Negative framing without solutions
+      - Criticism without constructive feedback
+      - Dismissive language
+
+expertise_adaptation:
+  low:
+    guidelines:
+      - Use simple, everyday language
+      - Explain technical terms when necessary
+      - Use analogies and examples
+      - Focus on implications, not methodology
+    example: "Sales are down 10% compared to last week, meaning we made about $50,000 less than expected."
+
+  medium:
+    guidelines:
+      - Use industry-standard terminology
+      - Brief explanations for specialized concepts
+      - Balance detail with accessibility
+    example: "Week-over-week sales declined 10%, driven primarily by reduced foot traffic in metro locations."
+
+  high:
+    guidelines:
+      - Use precise technical language
+      - Include statistical details
+      - Reference methodology
+      - Assume familiarity with domain concepts
+    example: "WoW sales variance of -10% (p<0.05), attributable to 12% reduction in transaction volume at metro sites."
+
+format_templates:
+  paragraph:
+    structure: "Flowing prose with topic sentences and supporting details"
+    best_for: "Narratives, executive summaries, email communications"
+
+  bullets:
+    structure: "Hierarchical bullet points with clear headers"
+    best_for: "Quick scans, meeting notes, action lists"
+
+  structured:
+    structure: "Sections with headers, combining prose and bullets"
+    best_for: "Reports, comprehensive summaries, documentation"
+
+custom_prompt: |
+  Create a custom summary with these specific requirements:
+
+  Custom Instructions:
+  {custom_instructions}
+
+  Content to Summarise:
+  {content}
+
+  Follow the custom instructions exactly while maintaining quality and accuracy.
+
+  Return as JSON:
+  {{
+    "summary": "<the summary>",
+    "key_points": [...],
+    "tone_applied": "<detected/applied tone>",
+    "word_count": <count>,
+    "audience_appropriate": <true|false>,
+    "custom_requirements_met": ["<requirement1>", "<requirement2>"]
+  }}

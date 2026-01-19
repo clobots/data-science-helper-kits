@@ -1,0 +1,180 @@
+# Summary Engine Prompt Templates
+
+system_prompt: |
+  You are a business intelligence expert who excels at communicating complex analytics
+  findings to diverse audiences. You transform detailed data insights into clear,
+  actionable narratives tailored to the reader's needs.
+
+  You understand that:
+  - Executives need strategic summaries with financial impact
+  - Analysts need methodology and detailed findings
+  - Operations teams need specific actions and timelines
+
+executive_summary_prompt: |
+  Create an executive summary of the following analysis:
+
+  Hypotheses Investigated:
+  {hypotheses}
+
+  Key Insights:
+  {insights}
+
+  Write a summary for senior executives that:
+  1. Leads with the most critical business impact
+  2. Quantifies financial implications where possible
+  3. Provides clear recommendations
+  4. Is concise (2-3 paragraphs maximum)
+  5. Uses business language, not technical jargon
+
+  Tone: {tone}
+
+  Return as JSON:
+  {{
+    "audience": "executive",
+    "tone": "{tone}",
+    "generated_date": "{date}",
+    "executive_summary": "<the summary text>",
+    "key_findings": [
+      {{
+        "title": "<finding title>",
+        "description": "<finding details>",
+        "impact": "<high|medium|low>",
+        "affected_areas": ["<area1>", "<area2>"]
+      }}
+    ],
+    "action_items": [
+      {{
+        "action": "<action>",
+        "priority": "<immediate|short_term|long_term>",
+        "owner": "<suggested owner>",
+        "expected_impact": "<impact>"
+      }}
+    ]
+  }}
+
+analyst_summary_prompt: |
+  Create a detailed analytical summary:
+
+  Analysis Overview:
+  {overview}
+
+  Hypotheses and Results:
+  {hypotheses}
+
+  Detailed Insights:
+  {insights}
+
+  Methodology:
+  {methodology}
+
+  Write a summary for data analysts that:
+  1. Explains the methodology used
+  2. Details statistical significance of findings
+  3. Shows the investigation path through hierarchy levels
+  4. Highlights data quality considerations
+  5. Suggests follow-up analyses
+
+  Return as JSON:
+  {{
+    "audience": "analyst",
+    "tone": "formal",
+    "generated_date": "{date}",
+    "executive_summary": "<brief overview>",
+    "key_findings": [...],
+    "action_items": [...],
+    "detailed_analysis": "<full analytical narrative>",
+    "appendix": {{
+      "methodology": "<methods used>",
+      "data_sources": ["<source1>"],
+      "confidence_levels": {{}},
+      "follow_up_analyses": ["<analysis1>"]
+    }}
+  }}
+
+operations_summary_prompt: |
+  Create an operational action plan:
+
+  Issues Identified:
+  {issues}
+
+  Affected Areas:
+  {affected_areas}
+
+  Recommendations:
+  {recommendations}
+
+  Write a summary for operations managers that:
+  1. Lists specific stores/categories affected
+  2. Provides concrete action steps
+  3. Includes timeframes and ownership
+  4. Prioritizes by urgency
+  5. Uses clear, direct language
+
+  Tone: {tone}
+
+  Return as JSON:
+  {{
+    "audience": "operations",
+    "tone": "{tone}",
+    "generated_date": "{date}",
+    "executive_summary": "<brief situation overview>",
+    "key_findings": [...],
+    "action_items": [
+      {{
+        "action": "<specific action step>",
+        "priority": "<immediate|short_term|long_term>",
+        "owner": "<role/team>",
+        "expected_impact": "<measurable outcome>"
+      }}
+    ]
+  }}
+
+multi_audience_prompt: |
+  Create summaries for multiple audiences from the same analysis:
+
+  Analysis Results:
+  {results}
+
+  For each audience (executive, analyst, operations), generate appropriate summaries.
+
+  Return as JSON:
+  {{
+    "summaries": {{
+      "executive": {{...}},
+      "analyst": {{...}},
+      "operations": {{...}}
+    }},
+    "shared_key_points": ["<point1>", "<point2>"],
+    "audience_specific_emphasis": {{
+      "executive": "<what to emphasize>",
+      "analyst": "<what to emphasize>",
+      "operations": "<what to emphasize>"
+    }}
+  }}
+
+alert_summary_prompt: |
+  Create an urgent alert summary for critical findings:
+
+  Critical Issues:
+  {issues}
+
+  Impact Assessment:
+  {impact}
+
+  Write an urgent alert that:
+  1. Immediately conveys severity
+  2. States the issue clearly in one sentence
+  3. Quantifies the impact
+  4. Provides immediate action steps
+  5. Identifies who needs to be involved
+
+  Return as JSON:
+  {{
+    "severity": "<critical|high|medium>",
+    "headline": "<one-line summary>",
+    "situation": "<what's happening>",
+    "impact": "<quantified impact>",
+    "immediate_actions": ["<action1>", "<action2>"],
+    "escalation": ["<who to notify>"],
+    "monitoring": "<what to watch>"
+  }}

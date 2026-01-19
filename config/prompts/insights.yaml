@@ -1,0 +1,133 @@
+# Insights Engine Prompt Templates
+
+system_prompt: |
+  You are a senior retail analytics consultant specializing in root cause analysis.
+  Your expertise is in drilling down through organizational hierarchies to identify
+  the source of performance issues in Australian supermarkets.
+
+  The hierarchy from granular to broad is:
+  Category → Store → Group → State → Zone → National
+
+  Your approach:
+  1. Start with the hypothesis at the detected level
+  2. Drill down to find where issues concentrate
+  3. Drill up to understand systemic patterns
+  4. Identify root causes vs symptoms
+  5. Provide actionable recommendations at each level
+
+drill_down_prompt: |
+  Investigate the following hypothesis by analyzing data at the {current_level} level:
+
+  Hypothesis: {hypothesis}
+  Investigation Path So Far: {path}
+  Parent Level Insight: {parent_insight}
+
+  Data at Current Level:
+  {data}
+
+  Analyze this data to:
+  1. Identify which entities at this level contribute most to the issue
+  2. Determine if the issue is concentrated or widespread
+  3. Look for patterns (geographic, categorical, operational)
+  4. Assess if we've found a root cause or need to drill deeper
+
+  Return your analysis as JSON:
+  {{
+    "hypothesis_id": "{hypothesis_id}",
+    "hierarchy_level": "{current_level}",
+    "hierarchy_id": "<id of most affected entity>",
+    "hierarchy_name": "<name>",
+    "finding": "<key finding at this level>",
+    "contribution_percentage": <how much this entity contributes>,
+    "root_cause_likelihood": <0.0-1.0>,
+    "supporting_data": {{
+      "top_contributors": [],
+      "pattern_detected": "<pattern type>",
+      "data_points_analyzed": <count>
+    }},
+    "recommended_actions": ["<action1>", "<action2>"],
+    "requires_deeper_investigation": <true|false>
+  }}
+
+pattern_analysis_prompt: |
+  Analyze the following insights across multiple hierarchy levels to identify patterns:
+
+  Insights:
+  {insights}
+
+  Look for:
+  1. Common themes across levels
+  2. Cascade effects (issues at one level causing issues at another)
+  3. Isolated vs systemic problems
+  4. Temporal patterns (did something change recently?)
+
+  Return pattern analysis as JSON:
+  {{
+    "patterns_identified": [
+      {{
+        "pattern_type": "<cascade|isolated|systemic|temporal>",
+        "description": "<pattern description>",
+        "affected_levels": ["<level1>", "<level2>"],
+        "confidence": <0.0-1.0>
+      }}
+    ],
+    "root_cause_hypothesis": "<most likely root cause>",
+    "systemic_factors": ["<factor1>", "<factor2>"]
+  }}
+
+recommendation_prompt: |
+  Based on the complete investigation of the hypothesis, generate actionable recommendations.
+
+  Hypothesis: {hypothesis}
+  Investigation Summary: {summary}
+  Key Insights: {insights}
+
+  Generate recommendations that are:
+  1. Specific and actionable (not vague platitudes)
+  2. Assigned to appropriate organizational levels
+  3. Prioritized by impact and feasibility
+  4. Measurable (include success criteria)
+
+  Return recommendations as JSON:
+  {{
+    "recommendations": [
+      {{
+        "action": "<specific action>",
+        "target_level": "<hierarchy level>",
+        "target_entities": ["<entity1>", "<entity2>"],
+        "priority": "<high|medium|low>",
+        "expected_impact": "<quantified impact>",
+        "success_metric": "<how to measure success>",
+        "timeframe": "<immediate|short_term|long_term>"
+      }}
+    ],
+    "quick_wins": ["<action1>", "<action2>"],
+    "strategic_initiatives": ["<initiative1>", "<initiative2>"]
+  }}
+
+cross_metric_prompt: |
+  Analyze relationships between multiple metrics to find correlations:
+
+  Metrics Data:
+  {metrics_data}
+
+  Look for:
+  1. Leading indicators (metric A predicts metric B)
+  2. Trade-offs (improving one metric worsens another)
+  3. Root causes affecting multiple metrics
+  4. Unexpected correlations
+
+  Return correlation analysis as JSON:
+  {{
+    "correlations": [
+      {{
+        "metric_1": "<metric>",
+        "metric_2": "<metric>",
+        "relationship": "<positive|negative|none>",
+        "strength": <0.0-1.0>,
+        "lag_weeks": <number if leading indicator>,
+        "interpretation": "<what this means>"
+      }}
+    ],
+    "shared_root_causes": ["<cause1>", "<cause2>"]
+  }}
